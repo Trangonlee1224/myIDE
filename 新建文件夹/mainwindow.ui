@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3" rowstretch="4,1" columnstretch="1,5">
+    <item row="0" column="0">
+     <widget class="QTreeView" name="treeView"/>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_2"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="errorTextEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>797</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>新建</string>
+    </property>
+    <addaction name="actionNew_N"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionSaveAs_A"/>
+    <addaction name="actionOpen_O"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionExit_E"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionfind_F"/>
+    <addaction name="actionreplace_R"/>
+    <addaction name="actionZoomIn_ZI"/>
+    <addaction name="actionUndo_Z"/>
+    <addaction name="actionCopy_C"/>
+    <addaction name="actionPaste_V"/>
+    <addaction name="actionCut_X"/>
+    <addaction name="actioncommentAll"/>
+    <addaction name="actioninsert_I"/>
+    <addaction name="actionHideComment_H"/>
+    <addaction name="actionShowComment_D"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>编译</string>
+    </property>
+    <addaction name="actionstart"/>
+    <addaction name="actionrun_R"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionHelp_H"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_N"/>
+   <addaction name="actionSave_S"/>
+   <addaction name="actionSaveAs_A"/>
+   <addaction name="actionOpen_O"/>
+   <addaction name="actionClose"/>
+   <addaction name="actionExit_E"/>
+   <addaction name="separator"/>
+   <addaction name="actionfind_F"/>
+   <addaction name="actionreplace_R"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy_C"/>
+   <addaction name="actionPaste_V"/>
+   <addaction name="actionCut_X"/>
+   <addaction name="actionUndo_Z"/>
+   <addaction name="separator"/>
+   <addaction name="actionstart"/>
+   <addaction name="actionrun_R"/>
+  </widget>
+  <action name="actionNew_N">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/document-new.png</normaloff>:/keyrwords/prefix1/actions/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/folder_new.png</normaloff>:/keyrwords/prefix1/actions/folder_new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSaveAs_A">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/document-save-as.png</normaloff>:/keyrwords/prefix1/actions/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveAs(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionOpen_O">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/fileopen.png</normaloff>:/keyrwords/prefix1/actions/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionfind_F">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/find.png</normaloff>:/keyrwords/prefix1/actions/find.png</iconset>
+   </property>
+   <property name="text">
+    <string>find(&amp;F)</string>
+   </property>
+  </action>
+  <action name="actionreplace_R">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/replace.png</normaloff>:/keyrwords/prefix1/actions/replace.png</iconset>
+   </property>
+   <property name="text">
+    <string>replace(&amp;R)</string>
+   </property>
+  </action>
+  <action name="actionZoomIn_ZI">
+   <property name="text">
+    <string>ZoomIn(&amp;ZI)</string>
+   </property>
+  </action>
+  <action name="actionUndo_Z">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/undo.png</normaloff>:/keyrwords/prefix1/actions/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo(&amp;Z)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionCopy_C">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/copoy.png</normaloff>:/keyrwords/prefix1/actions/copoy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy(&amp;C)\</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste_V">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/paste.png</normaloff>:/keyrwords/prefix1/actions/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionCut_X">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/cut.png</normaloff>:/keyrwords/prefix1/actions/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionstart">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/compile.png</normaloff>:/keyrwords/prefix1/actions/compile.png</iconset>
+   </property>
+   <property name="text">
+    <string>complie</string>
+   </property>
+  </action>
+  <action name="actionrun_R">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/run.png</normaloff>:/keyrwords/prefix1/actions/run.png</iconset>
+   </property>
+   <property name="text">
+    <string>run(&amp;R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actioncommentAll">
+   <property name="text">
+    <string>commentAll(&amp;/)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actioninsert_I">
+   <property name="text">
+    <string>FontSet(&amp;F)</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/gtk-cancel.png</normaloff>:/keyrwords/prefix1/actions/gtk-cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionExit_E">
+   <property name="icon">
+    <iconset resource="myrecourses.qrc">
+     <normaloff>:/keyrwords/prefix1/actions/exit.png</normaloff>:/keyrwords/prefix1/actions/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit(&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionHideComment_H">
+   <property name="text">
+    <string>HideComment(&amp;H)</string>
+   </property>
+  </action>
+  <action name="actionShowComment_D">
+   <property name="text">
+    <string>ShowComment(&amp;D)</string>
+   </property>
+  </action>
+  <action name="actionHelp_H">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myrecourses.qrc"/>
+ </resources>
+ <connections/>
+</ui>
