@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/keyrwords/prefix1">
+        <file>keywords.txt</file>
+        <file>ide help.txt</file>
+        <file>actions/document-new.png</file>
+        <file>actions/folder_new.png</file>
+        <file>actions/exit.png</file>
+        <file>actions/fileopen.png</file>
+        <file>actions/gtk-cancel.png</file>
+        <file>actions/document-save-as.png</file>
+        <file>actions/compile.png</file>
+        <file>actions/copoy.png</file>
+        <file>actions/cut.png</file>
+        <file>actions/find.png</file>
+        <file>actions/paste.png</file>
+        <file>actions/replace.png</file>
+        <file>actions/run.png</file>
+        <file>actions/undo.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
